@@ -2,7 +2,7 @@ import "dotenv/config";
 import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { logger } from "hono/logger";
-import { homeRouter } from "./routers/home-router";
+import { homeRouter } from "./routers/greetings";
 
 const app = new Hono().basePath("/api")
   .use(logger())
